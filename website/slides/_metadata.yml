@@ -1,0 +1,5 @@
+format:
+  revealjs:
+    scrollable: true
+    embed-resources: true
+    history: false

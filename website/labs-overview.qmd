@@ -178,7 +178,8 @@ the need for, and ways to build an effective, diverse design and
 development team. It also considers that lack of diversity can result
 in an unethical product.
 
-## [Ethics in E-Commerce: Digital Nudging](labs/digital-nudging.qmd)
+<!-- ## [Ethics in E-Commerce: Digital Nudging](labs/digital-nudging.qmd) -->
+## Ethics in E-Commerce: Digital Nudging (currently broken)
 
 This lab considers ethics in E-Commerce. It explores how pre-set
 choices on webpages can "nudge" a person to choose options that are

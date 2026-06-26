@@ -12,8 +12,8 @@ website:
     position: above-navbar
   title: "Integrated Ethics Labs"
   description: "Integrated Ethics Labs for teaching ethics in computing and data courses"
+  favicon: images/three-bars.png
   navbar:
-    favicon: images/three-bars.png
     left:
       - href: index.qmd
         text: Home
@@ -35,8 +35,4 @@ format:
     css: [css/fonts.css,css/style.css]
     toc: true
     toc-depth: 3
-  revealjs:
-    scrollable: true
-    embed-resources: true
-    history: false
 

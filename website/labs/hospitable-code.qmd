@@ -100,8 +100,8 @@ that is not well-written and well-documented.
 so that each student or pair of students can have a copy.
 
 -   Create a way to display (PowerPoint slide or other) the 
-    [reasons that students may not use hospitable programming practices]()
-    and possibly the [review of the ethical frameworks]().
+    reasons that students may not use hospitable programming practices
+    and possibly review the ethical frameworks.
 
 # Guide for Instructors
 

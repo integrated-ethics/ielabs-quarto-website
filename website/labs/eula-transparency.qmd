@@ -209,7 +209,9 @@ Their ideas include:
 
 A sample of the service mentioned in the Utilitarianism argument.
 
-![](https://lh6.googleusercontent.com/FFDYApNUl2E3TQr4dk6mqlck083U1P0ognhEA-PitoUGkAFhn403mjZlsScVcGnnlKNwF2VVw5ZT78ZtXRtSI2_PDk2KvtCEAjkPZP-sgGXFbcM4o_PE9DniIyczOTV5dOIDYagN_hgQJ638XA)
+![](images/tos-tldr.png)
+
+<!-- ![](https://lh6.googleusercontent.com/FFDYApNUl2E3TQr4dk6mqlck083U1P0ognhEA-PitoUGkAFhn403mjZlsScVcGnnlKNwF2VVw5ZT78ZtXRtSI2_PDk2KvtCEAjkPZP-sgGXFbcM4o_PE9DniIyczOTV5dOIDYagN_hgQJ638XA) -->
 
 Students might be interested in this article, which claims that plain language
 contracts on becoming more popular

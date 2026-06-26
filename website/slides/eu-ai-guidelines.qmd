@@ -5,14 +5,11 @@ format:
 ---
 
 
-```{r xaringan-themer, include=FALSE, eval=FALSE}
-library(xaringanthemer)
-style_duo_accent(
+<!--  colors used in xaringan
   primary_color = "#1381B0",
   secondary_color = "#FF961C",
-  inverse_header_color = "#FFFFFF"
-)
-```
+  inverse_header_color = "#FFFFFF" 
+-->
 
 
 ##

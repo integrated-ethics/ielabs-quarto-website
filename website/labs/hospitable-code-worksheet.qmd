@@ -24,7 +24,7 @@ engine: knitr
 
 <div class="tab content1">
 
-```{eval = FALSE}
+```{c++, eval = FALSE}
 #include <iostream>
 #include <vector>
 #include <exception>
@@ -102,7 +102,7 @@ int main()
 </div>
 <div class="tab content2">
 
-```
+```java
 import java.util.*;
 
 public class hMod
