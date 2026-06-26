@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100;0,250;0,300;0,400;0,500;0,600;1,100;1,300;1,500;1,600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Maitree:wght@200;300;400;500;600;700&display=swap');
+
+# @import url("fonts/vision/WEBFONT/stylesheet.css");
+
+font-family: 'Maitree', serif;
+
+@font-face {
+	font-family: 'Roboto Flex';
+	src: url('RobotoFlex-VF.woff2') format('woff2 supports variations'),
+       url('RobotoFlex-VF.woff2') format('woff2-variations');
+	font-weight: 100 1000;
+	font-stretch: 25% 151%;
+}
+
+font-family: 'Encode Sans', sans-serif;
+
+font-family: 'Josefin Slab', serif;
+
+font-family: 'Poppins', sans-serif;
+
+# font-family: 'visionregular', sans-serif;
+
+# body {
+#   font-family: Optima, Candara, Calibri, Arial, sans-serif;
+# }
+
+.menu li{
+  font-family: Maitree, Optima, Candara, Calibri, Arial, sans-serif;
+}
+
+body {
+  # font-family: visionregular, Encode Sans, Optima, Candara, Calibri, Arial, sans-serif;
+  # font-weight: 300;
+  font-family: Encode Sans, Optima, Candara, Calibri, Arial, sans-serif;
+  font-weight: 350;
+}
+
+.title {
+  line-height: 1.2em;
+}
+
+h1, h2, h3, h4 {
+  font-family: Maitree, Optima, Candara, Calibri, Arial, serif;
+  line-height: 100%;
+  font-weight: normal;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 550;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+h4 {
+  font-weight: 500;
+}
+
+strong {
+  font-weight: 700;
+}
+
+code {
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 85%;
+}

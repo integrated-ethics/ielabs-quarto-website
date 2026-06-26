@@ -1,0 +1,18 @@
+typography:
+  fonts:
+    - family: Poppins
+      source: google
+    - family: Josefin Slab
+      source: google
+    - family: Encode Sans
+      source: google
+    - family: Maitree
+      source: google
+    - family: Inconsolata
+      source: google
+  base: Encode Sans
+  headings: Maitree
+  monospace: Inconsolata 
+
+logo:
+  medium: images/integrated-ethics-labs-logo.svg

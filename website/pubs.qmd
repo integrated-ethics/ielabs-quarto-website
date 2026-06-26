@@ -1,0 +1,13 @@
+---
+pagetitle: ie:Pubs
+title: Publications and Presentations
+slug: pubs
+bibliography: ie-references.bib
+nocite: | 
+  @Carter:2019
+---
+
+:::{.pubs .banner-spacer}
+:::
+
+

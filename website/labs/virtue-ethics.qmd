@@ -1,0 +1,175 @@
+---
+title: "Virtue Ethics"
+author: "Lori Carter, Rebecca DeYoung"
+date: "2021-07-09"
+---
+
+# Student Materials
+
+* [web](virtue-ethics-worksheet.qmd)
+* [PDF](virtue-ethics-worksheet.pdf)
+
+# Overview
+
+**Ethics background** required: None
+
+**Subject matter** referred to in this lab: Assignments in courses
+
+**Placement** in overall ethics curriculum:
+
+- Academic year: First year, first semester, probably introductory
+  statistics, data science, or programming course
+
+- Recommended previous labs:
+  [*A First Look at Ethics in Computer and Data Science*](first-look.qmd)
+  (this lab is designed to be completed as homework)
+
+- Recommended follow-up labs: [*Analogies (Code Plagiarism)*](analogies-code-plagiarism.qmd)
+
+**Time** required:
+**Out of class**: None;  **In class**: 20-30 minutes
+
+**Learning objectives**:
+
+- Students further understand how the virtue ethics framework works
+- Students practice applying the virtue ethics framework to scenarios
+- Students learn to articulate which virtues might shape decisions and
+  actions using the virtue ethics framework
+- Students consider how virtues are developed as positive character traits
+
+**Ethical issue to be considered**: Several scenarios related to a course.
+
+**Flow**
+
+- Students are reminded of what a virtue is
+- Students are reminded of what the virtue ethics framework is
+- Activity: Students work in small groups to determine how a virtuous
+  person would respond in four different scenarios
+- Reflection: Groups compare notes on virtuous responses and ponder
+  how/why their ideas may differ
+
+**Preparation required:** Read the entire lab several times. Print a
+copy of the student handout for each student in the class. Have a copy
+of the "professor answers" available in case you need them.
+
+# Guide for Instructors
+
+## Lesson plan
+
+### Introduction (to be read or summarized to class) (3 minutes)
+
+Virtues can be defined as character traits — qualities that impact how we
+feel, think, and act — that we can cultivate through intentional practice,
+and that in turn shape our practice and action. Virtues are good
+character traits. We might usefully distinguish virtues — moral
+qualities of a person — from personality traits that are not specifically
+moral. For example, being an optimistic person or an extrovert, or
+having leadership qualities or aptitude for higher math might often be
+beneficial or good traits to have, but they are not necessarily moral
+traits (i.e., they can be used to do bad actions, accomplish bad ends,
+or lead to personal corruption). Virtues are traits like kindness,
+wisdom, justice, and faithfulness — qualities of character that, as the
+Greek philosopher Aristotle put it, make people good and make their
+actions good too (*Nichomachean Ethics* ii.6).
+
+Since the virtue ethics framework asks the question "what would a
+virtuous person do?" to determine what is right, if we want to use this
+framework it is important to look at these positive character traits and
+understand how they might inform the decisions of a virtuous person.
+
+You will be considering several scenarios and trying to determine how a
+virtuous person would respond. You will have the opportunity to list
+which virtues you think would most influence the response.
+
+### Discussion Guidelines
+
+In this lab, students are asked to openly discuss virtues. To encourage
+authentic engagement with the material and each other, you may need to
+state some guidelines on expectations of peer-to-peer interaction. Here
+are two suggestions from "Guidelines For Classroom Interactions," the
+Center for Research on Learning & Teaching, University of Michigan,
+<http://crlt.umich.edu/examples-discussion-guidelines>.
+
+1. **Understand that your words have effects on others.** Speak with
+   care. If you learn that something you have said was experienced as
+   disrespectful or marginalizing, listen carefully and try to
+   understand that perspective. Learn how you can do better in the
+   future.
+
+2. **Understand that others will come to these discussions with
+   different experiences from yours.** Be careful about assumptions and
+   generalizations you make based only on your experience. Be open to
+   hearing and learning from other perspectives.
+
+Ask students to keep these guidelines (or other similar guidelines)
+in mind as they discuss the scenarios in this lab.
+
+### Activity (7-10 minutes)
+
+Pass out papers with scenarios or point them to the scenarios you have
+posted online. Allow students to consider the four scenarios either as
+individuals or in small groups (3-4 students). Groups are probably best
+if it is possible and they can be kept small.
+
+### Changing it up
+
+You could easily modify this activity by
+
+- adding additional virtues to the list,
+- modifying or replacing the particular scenarios,
+- asking students to compare and contrast highly valued virtues in different cultures.
+
+### Reflection (to be completed in class after the activity is finished) (10 minutes)
+
+Suggestions for guiding student reflection:
+
+1. As time allows, **consider each scenario as a class** and have groups share their thoughts.
+
+   - Professor made very hard assignment — could be honest and ask for suggestions from students
+     (virtues: hospitality, humility, transparency)
+   - Friend asks for help at last minute — help as much as possible but ensure the work is the friend's own
+     (virtues: integrity, compassion, patience, kindness)
+   - Last minute question for Lab Assistant — look at the error and suggest ways the student can find it
+     (virtues: integrity, compassion, professionalism, respect)
+   - Heavy workload with grumbling students — figure out how much time is actually spent, identify valid complaints
+     (virtues: patience, integrity, respect, initiative, honesty)
+
+2. It is quite possible that students will reach **different conclusions** about what a virtuous person
+   would do. Consider with the class what to make of this.
+
+   - Are some virtues to be ranked more highly?
+   - **This discovery should lead to mentioning that a single ethical framework might not be enough.**
+     That is why we will be looking at other frameworks.
+
+3. Ask the class if they think they would **naturally respond** in a virtuous way or if it would be hard.
+
+4. Ask the class what the **benefits** might be **for a virtuous response** for each of the scenarios.
+
+### Wrap Up (To be read or summarized)
+
+We are not born with virtues, we develop them over a lifetime through practice, imitating role models, and
+reflecting on how the world around us forms our character.
+
+Virtue ethicists suggest a number of **ways to cultivate virtue and good character:**
+
+- **Repeated intentional action.** Deliberately set out to create new habits. Structure your environment
+  to give you reminders and make your new practices easier.
+- **Join a community** of people who already have and exercise this virtue.
+- **Find a role model** who has this virtue and spend time with that person, paying attention to their
+  assessments and reactions to situations.
+
+## Assessment
+
+1. Ask students to define "virtue."
+   - Morally positive character traits
+
+2. Ask students to describe how the virtue ethics framework could be applied to an ethical dilemma.
+
+3. Ask students to reflect on two different virtues and indicate which (if either) they think is
+   more important and why.
+
+4. What are some of the challenges of using the virtue ethics framework alone?
+   - Relative importance of virtues differ between people
+   - Sometimes hard to find the 'better of 2 difficult choices'
+
+5. Give an example of acting virtuously along with the benefits it could produce.

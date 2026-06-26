@@ -1,0 +1,15 @@
+engine: markdown
+bibliography: ../ie-references.bib
+link-citations: true
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    format-links:
+      - typst
+    code-tools:
+      source: true
+  typst:
+    toc: false

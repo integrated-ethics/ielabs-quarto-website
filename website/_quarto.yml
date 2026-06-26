@@ -1,0 +1,42 @@
+project:
+  type: website
+
+website:
+  repo-url: https://github.com/integrated-ethics/quarto-website
+  repo-actions: [source, issue]
+  announcement: 
+    icon: info-circle
+    dismissable: true
+    content: Welcome to our new website! Please report any issues or suggestions on our <a href="https://github.com/integrated-ethics/quarto-website/issues">GitHub Issues</a> page.
+    type: primary
+    position: above-navbar
+  title: "Integrated Ethics Labs"
+  description: "Integrated Ethics Labs for teaching ethics in computing and data courses"
+  navbar:
+    favicon: images/three-bars.png
+    left:
+      - href: index.qmd
+        text: Home
+      - href: labs-overview.qmd
+        text: Labs
+      - href: resources.qmd
+        text: Resources
+      - href: pubs.qmd
+        text: Publications/Talks
+      - href: about.qmd
+        text: About
+    right:
+      - href: get-involved.qmd
+        text: Get Involved
+
+format:
+  html:
+    theme: cosmo
+    css: [css/fonts.css,css/style.css]
+    toc: true
+    toc-depth: 3
+  revealjs:
+    scrollable: true
+    embed-resources: true
+    history: false
+
