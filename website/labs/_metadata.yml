@@ -13,3 +13,7 @@ format:
       source: true
   typst:
     toc: false
+    logo: 
+      path: ../images/integrated-ethics-labs-logo-small.png
+      location: "left-top"
+      width: 1.7cm
