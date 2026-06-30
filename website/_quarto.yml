@@ -24,6 +24,7 @@ website:
         text: Publications/Talks
       - href: about.qmd
         text: About
+    right:
       - href: get-involved.qmd
         text: Get Involved
 
