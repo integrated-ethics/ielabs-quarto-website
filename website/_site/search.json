@@ -1101,7 +1101,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Integrated Ethics Labs",
+    "title": "",
     "section": "",
     "text": "Bring Ethicsto the Classroom\nCurrent ie:Labs focus on computer science, data science, statistics, and engineering.\n\nView Labs\n\n\n\n\n\n\n\n\nA Progressive Approach\nIntegrated Ethics Labs (ie:Labs) are designed to be used as part of a comprehensive, progressive plan that strengthens students’ habits of mind and behavior throughout a multi-year program.\n\nRead More…\n\n\n\n\n\n\n\n\nUse, Share, Remix\nie:Labs are provided under the CC-BY-NC-SA 4.0 license. This means you can customize the labs to suit your courses and your students.\n\nView License Info"
   },
@@ -1300,5 +1300,138 @@
     "title": "ie:Labs Overview",
     "section": "Survey Design",
     "text": "Survey Design\nSurveys are used by businesses, government agencies, and non-profits to discover the behaviors and opinions of groups of people. What ethical principles help us gather this information in a way that provides reliable information and protects the rights of those being surveyed?"
+  },
+  {
+    "objectID": "labs/loan-thresholds.html",
+    "href": "labs/loan-thresholds.html",
+    "title": "Fairness and Loan Thresholds",
+    "section": "",
+    "text": "Worksheet\n\nweb\nPDF"
+  },
+  {
+    "objectID": "labs/loan-thresholds.html#a-simplified-situation",
+    "href": "labs/loan-thresholds.html#a-simplified-situation",
+    "title": "Simulating Loan Thresholds",
+    "section": "",
+    "text": "Imagine a machine learning algorithm that takes information about loan applicants and assigns them a credit score from 0 to 100. The credit scores are not perfect, however. Applicants with higher credit scores are more likely to repay their loan, but some people with lower credit scores will repay loans, and some with higher scores will not.\nYour task is to devise a system that uses these credit scores to decide who gets a loan.\n\nExercise 1 How will you measure how “good” your system is? What sorts of things could you measure/quantify as indication of how well your system works? We’ll call those things metrics. Come up with at least 3 metrics.\n\n\n\n\n\nExercise 2 Which of your metrics do you like better? Why?\n\n\nNow let’s experiment a bit with some simulated data. Go to the “Simulating Loan Thresholds” page at http://research.google.com/bigpicture/attacking-discrimination-in-ml/. The graphs and figures provide metrics, and you can slide the credit score threshold and see how these metrics change. It is based on issues raised in Hardt et al. (2016).\n\nExercise 3 What metrics are included on this page? How many of them are the same (or equivalent to)1 the ones you came up with?\n\n\nExercise 4 What credit score threshold maximizes the number of correct decisions? Does that same threshold also minimize the number of incorrect decisions?\n\n\nExercise 5 What threshold maximizes profit?\nNote: The app assumes a marginal gain of $300 for each loan repaid and a loss of $700 for each loan default. This is mentioned later in the text, but you can also figure it from the interactive graphic. How?\n\n\nExercise 6 Are your answers to #4 and #5 the same? Why or why not? \n\n\nExercise 7 The app doesn’t let you experiment with this, but suppose repaid loans had a marginal benefit of $400 and defaulted loans a marginal cost of only $600.\n\nWould that lead a profit-maximizer to increase or decrease the threshold? Why?\nHow would the threshold change if you are maximizing correct decisions."
+  },
+  {
+    "objectID": "labs/loan-thresholds.html#different-groups",
+    "href": "labs/loan-thresholds.html#different-groups",
+    "title": "Simulating Loan Thresholds",
+    "section": "Different groups",
+    "text": "Different groups\n\n\n\n\n\n\nWarningDon’t click the red buttons until directed.\n\n\n\nInstead, just drag the threshold sliders.\n\n\n\nExercise 8 The text says: “In this case, the distributions of the two groups are slightly different, even though blue and orange people are equally likely to pay off a loan.”\n\nIn what way are the distributions (of credit scores) different for blue people and orange people? (Remember your statistics? You might think about things like center, spread, shape, etc. But remeber that we are comparing distributions of two variables: credit score and whether or not they repay the loan.)\nHow might you improve the graphical display to make it easier to see how the two groups differ?\nDoes the credit score do a better job for one group than for the other? What do you mean by better?\n\n\n\nExercise 9 Adjust the thresholds to maximize the profit that the bank gets for each group individually.\n\nWhat are the resulting thresholds for the two groups?\nAt those thresholds, which group is offered more loans?\nOf the loans that were offered, which group repays more of those loans?\nWhat is the resulting profit for the bank?\nIs that fair? (explain.) (Check your answer by clicking on the red “Max Profit” button.)\n\n\n\nExercise 10 Adjust the thresholds to maximize profit under the constraint that blue and orange must have the same threshold. (This is tricky in the UI; hint: it must be between the two thresholds you found in the previous exercise.) Answer the same five questions (a-e) as in the previous exercise. Then check your answer by clicking the “Group Unaware” button.\n\n\nExercise 11 Starting at the “Group Unaware” thresholds, change the threshold on the orange group to increase its Positive Rate to match the Positive Rate of the blue group.\n\nWhat happens to the True Positive Rate?\nWhat happens to the bank’s profit?\nIs that good? Explain.\n\n\n\nExercise 12 Explore the “Demographic Parity” and “Equal Opportunity” objectives by clicking their buttons. The authors of the interactive visualization seem to have a favorite among these objectives. What reasons might someone have to agree or disagree with their assessment?"
+  },
+  {
+    "objectID": "labs/loan-thresholds.html#thinking-about-your-thinking",
+    "href": "labs/loan-thresholds.html#thinking-about-your-thinking",
+    "title": "Simulating Loan Thresholds",
+    "section": "Thinking about your thinking",
+    "text": "Thinking about your thinking\nThere are a lot of value-laden words in the questions above: words like good, better, fair, etc. Compare two ways of awarding loans (from the ones above or from other way you come up with), one of which you think is “better” than the other. This will be more interesting if you choose two that are close rather than one that you think is great and one that you think is terrible – make the decision difficult.\n\nExercise 13 What makes one better than the other? Imagine you had to defend the choice, what would be the main components of your argument?\n\n\nExercise 14 Are there general principles that would apply to other situations that have nothing to do with loans and credit scores?\n\n\nExercise 15 If you could wish for any feature(s) to be added to this simulation, what would it/they be?"
+  },
+  {
+    "objectID": "labs/loan-thresholds.html#the-article",
+    "href": "labs/loan-thresholds.html#the-article",
+    "title": "Simulating Loan Thresholds",
+    "section": "The article",
+    "text": "The article\nThis simple simulation is a by-product of a paper: Hardt et al. (2016).\nHere is the abstract:\n\nWe propose a criterion for discrimination against a specified sensitive attribute in supervised learning, where the goal is to predict some target based on available features. Assuming data about the predictor, target, and membership in the protected group are available, we show how to optimally adjust any learned predictor so as to remove discrimination according to our definition. Our framework also improves incentives by shifting the cost of poor classification from disadvantaged groups to the decision maker, who can respond by improving the classification accuracy. We enourage readers to consult the more complete manuscript on the arXiv.\n\n\nExercise 16 For each of the bolded words/phrases in the abstract, say what they correspond to in the simulation we just looked at: (a) specified sensitive attribute; (b) some target; (c) available features; (d) predictor; (e) membership in the protected group; (f) adjust (any) learned predictor."
+  },
+  {
+    "objectID": "labs/loan-thresholds.html#footnotes",
+    "href": "labs/loan-thresholds.html#footnotes",
+    "title": "Simulating Loan Thresholds",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nFor our purposes, two metrics are equivalent if they rank any two things the same – that is, they always agree about which option is the better one.↩︎"
+  },
+  {
+    "objectID": "labs/loan-thresholds.html#simulating-loan-thresholds",
+    "href": "labs/loan-thresholds.html#simulating-loan-thresholds",
+    "title": "Simulating Loan Thresholds",
+    "section": "Simulating Loan thresholds",
+    "text": "Simulating Loan thresholds\nNow go to the section entitled “Simulating loan thresholds.” The graphs and figures in this section provide metrics, and you can slide the credit score threshold and see how these metrics change. \n\nExercise 4 What metrics are included on this page? How many of them are the same (or equivalent to)1 the ones you came up with?\n\n\nExercise 5 What credit score threshold maximizes the number of correct decisions? Does that same threshold also minimize the number of incorrect decisions?\n\n\nExercise 6 What threshold maximizes profit?\nNote: The app assumes a marginal gain of $300 for each loan repaid and a loss of $700 for each loan default. This is mentioned at the end of the section, but you can also figure it out from the interactive graphic. How?\n\n\nExercise 7 Are your answers to Exercise 5 and Exercise 6 the same? Why or why not? \n\n\nExercise 8 The app doesn’t let you experiment with this, but suppose repaid loans had a marginal benefit of $400 and defaulted loans a marginal cost of only $600.\n\nWould that lead a profit-maximizer to increase or decrease the threshold? Why?\nHow would the threshold change if you are maximizing correct decisions."
+  },
+  {
+    "objectID": "labs/loan-thresholds.html#loan-applicants-two-scenarios",
+    "href": "labs/loan-thresholds.html#loan-applicants-two-scenarios",
+    "title": "Simulating Loan Thresholds",
+    "section": "Loan Applicants: two scenarios",
+    "text": "Loan Applicants: two scenarios\n\nExercise 3 Read the opening section of the web page to make sure you understand the two scenarios presented and how they are represented graphically."
+  },
+  {
+    "objectID": "labs/loan-thresholds-worksheet.html",
+    "href": "labs/loan-thresholds-worksheet.html",
+    "title": "Simulating Loan Thresholds",
+    "section": "",
+    "text": "Imagine a machine learning algorithm that takes information about loan applicants and assigns them a credit score from 0 to 100. The credit scores are not perfect, however. Applicants with higher credit scores are more likely to repay their loan, but some people with lower credit scores will repay loans, and some with higher scores will not.\nYour task is to devise a system that uses these credit scores to decide who gets a loan.\n\nExercise 1 How will you measure how “good” your system is? What sorts of things could you measure/quantify as an indication of how well your system works? We’ll call those things metrics. Come up with at least 3 metrics.\n\n\n\n\n\nExercise 2 Which of your metrics do you like better? Why?\n\n\nNow let’s experiment a bit with some simulated data. Go to the “Attacking discrimination with smarter machine learning” page page at\n\nhttps://web.archive.org/web/20260101103806/http://research.google.com/bigpicture/attacking-discrimination-in-ml/ \n\nThis website is based on issues raised in Hardt et al. (2016)."
+  },
+  {
+    "objectID": "labs/loan-thresholds-worksheet.html#a-simplified-situation",
+    "href": "labs/loan-thresholds-worksheet.html#a-simplified-situation",
+    "title": "Simulating Loan Thresholds",
+    "section": "",
+    "text": "Imagine a machine learning algorithm that takes information about loan applicants and assigns them a credit score from 0 to 100. The credit scores are not perfect, however. Applicants with higher credit scores are more likely to repay their loan, but some people with lower credit scores will repay loans, and some with higher scores will not.\nYour task is to devise a system that uses these credit scores to decide who gets a loan.\n\nExercise 1 How will you measure how “good” your system is? What sorts of things could you measure/quantify as an indication of how well your system works? We’ll call those things metrics. Come up with at least 3 metrics.\n\n\n\n\n\nExercise 2 Which of your metrics do you like better? Why?\n\n\nNow let’s experiment a bit with some simulated data. Go to the “Attacking discrimination with smarter machine learning” page page at\n\nhttps://web.archive.org/web/20260101103806/http://research.google.com/bigpicture/attacking-discrimination-in-ml/ \n\nThis website is based on issues raised in Hardt et al. (2016)."
+  },
+  {
+    "objectID": "labs/loan-thresholds-worksheet.html#loan-applicants-two-scenarios",
+    "href": "labs/loan-thresholds-worksheet.html#loan-applicants-two-scenarios",
+    "title": "Simulating Loan Thresholds",
+    "section": "Loan Applicants: two scenarios",
+    "text": "Loan Applicants: two scenarios\n\nExercise 3 Read the opening section of the web page to make sure you understand the two scenarios presented and how they are represented graphically."
+  },
+  {
+    "objectID": "labs/loan-thresholds-worksheet.html#simulating-loan-thresholds",
+    "href": "labs/loan-thresholds-worksheet.html#simulating-loan-thresholds",
+    "title": "Simulating Loan Thresholds",
+    "section": "Simulating Loan thresholds",
+    "text": "Simulating Loan thresholds\nNow go to the section entitled “Simulating loan thresholds.” The graphs and figures in this section provide metrics, and you can slide the credit score threshold and see how these metrics change. \n\nExercise 4 What metrics are included on this page? How many of them are the same (or equivalent to)1 the ones you came up with?\n\n\nExercise 5 What credit score threshold maximizes the number of correct decisions? Does that same threshold also minimize the number of incorrect decisions?\n\n\nExercise 6 What threshold maximizes profit?\nNote: The app assumes a marginal gain of $300 for each loan repaid and a loss of $700 for each loan default. This is mentioned at the end of the section, but you can also figure it out from the interactive graphic. How?\n\n\nExercise 7 Are your answers to Exercise 5 and Exercise 6 the same? Why or why not? \n\n\nExercise 8 The app doesn’t let you experiment with this, but suppose repaid loans had a marginal benefit of $400 and defaulted loans a marginal cost of only $600.\n\nWould that lead a profit-maximizer to increase or decrease the threshold? Why?\nHow would the threshold change if you are maximizing correct decisions."
+  },
+  {
+    "objectID": "labs/loan-thresholds-worksheet.html#different-groups",
+    "href": "labs/loan-thresholds-worksheet.html#different-groups",
+    "title": "Simulating Loan Thresholds",
+    "section": "Different groups",
+    "text": "Different groups\n\n\n\n\n\n\nWarningDon’t click the red buttons until directed.\n\n\n\nInstead, just drag the threshold sliders.\n\n\n\nExercise 9 The text says: “In this case, the distributions of the two groups are slightly different, even though blue and orange people are equally likely to pay off a loan.”\n\nIn what way are the distributions (of credit scores) different for blue people and orange people? (Remember your statistics? You might think about things like center, spread, shape, etc. But remember that we are comparing distributions of two variables: credit score and whether or not they repay the loan. Furthermore, the dot plots are stacking dots – light above dark – so be sure to interpret the shapes accordingly.)\nHow might you improve the graphical display to make it easier to see how the two groups differ?\nDoes the credit score do a better job for one group than for the other? What do you mean by better?\n\n\n\nExercise 10 Adjust the thresholds to maximize the profit that the bank gets for each group individually.\n\nWhat are the resulting thresholds for the two groups? (After discovering this by sliding the thresholds, you can check your answer by clicking on the red “Max Profit” button.)\nAt those thresholds, which group is offered more loans?\nOf the loans that were offered, which group repays more of those loans?\nWhat is the resulting profit for the bank?\nIs that fair? (explain.)\n\n\n\nExercise 11 Adjust the thresholds to maximize profit under the constraint that blue and orange must have the same threshold. (This is tricky in the UI; hint: it must be between the two thresholds you found in the previous exercise.) Answer the same five questions (a-e) as in the previous exercise. Then check your answer by clicking the “Group Unaware” button.\n\n\nExercise 12 Starting at the “Group Unaware” thresholds, change the threshold on the orange group to increase its Positive Rate to match the Positive Rate of the blue group.\n\nWhat happens to the True Positive Rate?\nWhat happens to the bank’s profit?\nIs that good? Explain.\n\n\n\nExercise 13 Explore the “Demographic Parity” and “Equal Opportunity” objectives by clicking their buttons. The authors of the interactive visualization seem to have a favorite among these objectives. What reasons might someone have to agree or disagree with their assessment?"
+  },
+  {
+    "objectID": "labs/loan-thresholds-worksheet.html#thinking-about-your-thinking",
+    "href": "labs/loan-thresholds-worksheet.html#thinking-about-your-thinking",
+    "title": "Simulating Loan Thresholds",
+    "section": "Thinking about your thinking",
+    "text": "Thinking about your thinking\nThere are a lot of value-laden words in the questions above: words like good, better, fair, etc. Compare two ways of awarding loans (from the ones above or from other ways you come up with), one of which you think is “better” than the other. This will be more interesting if you choose two that each of strong points rather than one that you think is great and one that you think is terrible – make the decision difficult.\n\nExercise 14 What makes one better than the other? Imagine you had to defend the choice, what would be the main components of your argument?\n\n\nExercise 15 Are there general principles that would apply to other situations that have nothing to do with loans and credit scores?\n\n\nExercise 16 If you could wish for any feature(s) to be added to this simulation, what would it/they be?"
+  },
+  {
+    "objectID": "labs/loan-thresholds-worksheet.html#the-article",
+    "href": "labs/loan-thresholds-worksheet.html#the-article",
+    "title": "Simulating Loan Thresholds",
+    "section": "The article",
+    "text": "The article\nThis simple simulation is a by-product of a paper: Hardt et al. (2016).\nHere is the abstract:\n\nWe propose a criterion for discrimination against a specified sensitive attribute in supervised learning, where the goal is to predict some target based on available features. Assuming data about the predictor, target, and membership in the protected group are available, we show how to optimally adjust any learned predictor so as to remove discrimination according to our definition. Our framework also improves incentives by shifting the cost of poor classification from disadvantaged groups to the decision maker, who can respond by improving the classification accuracy. We enourage readers to consult the more complete manuscript on the arXiv.\n\n\nExercise 17 For each of the bolded words/phrases in the abstract, say what they correspond to in the simulation we just looked at: (a) specified sensitive attribute; (b) some target; (c) available features; (d) predictor; (e) membership in the protected group; (f) adjust (any) learned predictor."
+  },
+  {
+    "objectID": "labs/loan-thresholds-worksheet.html#footnotes",
+    "href": "labs/loan-thresholds-worksheet.html#footnotes",
+    "title": "Simulating Loan Thresholds",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nFor our purposes, two metrics are equivalent if they rank any two things the same – that is, they always agree about which option is the better one.↩︎"
+  },
+  {
+    "objectID": "labs/loan-thresholds.html#lesson-plan",
+    "href": "labs/loan-thresholds.html#lesson-plan",
+    "title": "Fairness and Loan Thresholds",
+    "section": "Lesson plan",
+    "text": "Lesson plan\n\nIntroduction (5 minutes)\nHave students brainstorm types of automated decisions that could be based on assigning some sort of score to a person. (Examples: loans based on credit scores; car insurance rates based on driving score; college admissions based on GPA or test scores, or some score that combines these with other factors like extracurricular activities, community service, etc.; hiring based on some sort of score that combines education, experience, and other factors; sentencing based on a “likelihood of recidivism” score, etc.)\nPoint out that none of these sorts of scores are perfect – some wrong decisions will be made. Have students think about the types of wrong decisions that can be made (positive decision for someone who should not have been given a position decision, negative decision for someone who should not have been given a negative decision) and how various stakeholders are affected by the different types of errors.\nDepending on how comfortable you think students will be coming up with metrics for fairness, either do the first portion of the activity as a class discussions or let students work in groups to come up with their own metrics.\n\n\nWorksheet (\\(\\ge\\) 25 minutes)\nAt the point students should be ready to work through the worksheet. It may be useful to interact with groups as they are going along to make sure they are on the right track, are asking questions if they are confused, and are giving sufficiently thoughtful answers.\n\n\nReflection\nIf you have time, reflection can be done as a class discussion having the reporters from the groups share their groups’ answers to some of the questions. If in-class time is short, some of the responses could be assigned as group homework. If you use a system like Perusall, you could have students post their answers to the questions and then have other students comment on them.\n\n\nAdditional resources\nIn this simple situation, the results of score-based decision-making can be summarised in a 2-by-2 table called a confusion matrix.\nThe Wikipeidia article on confusion matrices includes a large number of different metrics that can be applied to evaluate the performance of these systems.\nNarayanan (2018) provides an overview of 21 different fairness definitions (and their “politics”). This is a video recording of a tutorial given at ACM FAT* in 2018."
+  },
+  {
+    "objectID": "labs-overview.html#fairness-in-machine-learning-loan-thresholdslabsloan-thresholds.qmd",
+    "href": "labs-overview.html#fairness-in-machine-learning-loan-thresholdslabsloan-thresholds.qmd",
+    "title": "ie:Labs Overview",
+    "section": "Fairness in Machine Learning: Loan Thresholds](labs/loan-thresholds.qmd)",
+    "text": "Fairness in Machine Learning: Loan Thresholds](labs/loan-thresholds.qmd)\nMost people would agree that fairness is an important ethical principle. However, when it comes to fairness in machine learning, there are multiple definitions of fairness and they are not all compatible with each other. How do we decide which type of fairness is the most important? This lab provides a simplified scenario to help students explore the different definitions of fairness and how they can be applied to a machine learning algorithm that assigns credit scores to loan applicants. Students will be asked to consider how they would measure the “goodness” of a system that uses these credit scores to decide who gets a loan, and then compare their metrics with those provided in an interactive website."
+  },
+  {
+    "objectID": "labs-overview.html#fairness-in-machine-learning-loan-thresholds",
+    "href": "labs-overview.html#fairness-in-machine-learning-loan-thresholds",
+    "title": "ie:Labs Overview",
+    "section": "Fairness in Machine Learning: Loan Thresholds",
+    "text": "Fairness in Machine Learning: Loan Thresholds\nMost people would agree that fairness is an important ethical principle. However, when it comes to fairness in machine learning, there are multiple definitions of fairness and they are not all compatible with each other. How do we decide which type of fairness is the most important? This lab provides a simplified scenario to help students explore the different definitions of fairness and how they can be applied to a machine learning algorithm that assigns credit scores to loan applicants. Students will be asked to consider how they would measure the “goodness” of a system that uses these credit scores to decide who gets a loan, and then compare their metrics with those provided in an interactive website."
   }
 ]

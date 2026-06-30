@@ -1,3 +1,7 @@
+.navbar-nav {
+  margin-right: auto !important;
+  margin-left: 0 !important;
+}
 
 body {
   max-width: 800px;

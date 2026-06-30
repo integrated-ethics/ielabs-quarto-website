@@ -137,6 +137,10 @@ They are then given the opportunity to consider how the algorithms
 could have been improved if they had been vetted with the set of
 guidelines recently released by the EU.
 
+## [Fairness in Machine Learning: Loan Thresholds](labs/loan-thresholds.qmd)
+
+Most people would agree that fairness is an important ethical principle. However, when it comes to fairness in machine learning, there are multiple definitions of fairness and they are not all compatible with each other.  How do we decide which type of fairness is the most important?  This lab provides a simplified scenario to help students explore the different definitions of fairness and how they can be applied to a machine learning algorithm that assigns credit scores to loan applicants.  Students will be asked to consider how they would measure the "goodness" of a system that uses these credit scores to decide who gets a loan, and then compare their metrics with those provided in an interactive website.
+
 ## [Media Literacy (Choosing resources for background research)](labs/media-literacy.qmd)
 
 Many students get all of their information from social media. It is

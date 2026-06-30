@@ -15,4 +15,6 @@ typography:
   monospace: Inconsolata 
 
 logo:
-  medium: images/integrated-ethics-labs-logo.svg
+  small: images/integrated-ethics-labs-logo-small.png
+  medium: images/integrated-ethics-labs-logo-medium.png
+  large: images/integrated-ethics-labs-logo-large.png

@@ -1,0 +1,125 @@
+---
+title: "Fairness and Loan Thresholds"
+date: "2026-06-29"
+author: Randall Pruim
+bibliography: ../ie-references.bib
+link-citations: true
+nocite: '@Hardt:2016, @FairML:2023'
+---
+
+# Student Materials
+
+* Worksheet
+    * [web](loan-thresholds-worksheet.qmd)
+    * [PDF](loan-thresholds-worksheet.pdf)
+ 
+# Overview
+
+**Ethics background** required: Ideally, students should be familiar
+with the 4 ethical frameworks presented in the first year curriculum
+(virtue ethics, deontology,  consequentialism, analogies) as that will 
+provide them with a better context for discussion, but the activity 
+could be done without that background.
+
+**Subject matter** referred to in this lab: Fairness in machine learning algorithms (applied to a simplified loan threshold scenario).
+
+**Placement** in overall ethics curriculum:
+
+* Academic year: Year 2-4 core course that talks 
+about machine learning, confusion matrices, or fairness.
+
+* Recommended previous labs: First year ethics curriculum
+
+* Recommended follow-up labs: No direct follow-up labs. But there is a similar 
+interactive website at <https://pair.withgoogle.com/explorables/measuring-fairness/>
+that could be used for further investigation (or as an alternative).
+
+**Time** required:
+
+* In class: 30 minutes or more.
+
+**Learning objectives**:
+
+-   Students are invited to think about ways to quantify fairness.
+
+-   Students discover that there are multiple notions of fairness, and that they are not all compatible with each other.
+
+-   Students are encouraged to think ethically about fairness and how it plays out in situations that impact people.
+
+
+**Ethical issues to be considered:** 
+Fairness, diversity
+
+
+**Flow**
+
+Students work through a guided activity while reading through and interacting 
+with the activity at 
+<https://web.archive.org/web/20260101103806/http://research.google.com/bigpicture/attacking-discrimination-in-ml/>.  (Note: This site is no longer available where it was originally posted, but the "Way Back Machine" provides a usable version of it.)
+
+Instructors could modify the exercises or provide some additional introductory material 
+if they think students will have a difficult time coming up with and understanding 
+metrics for fairness.  Alternatively, the first portion could be done as a class 
+discussion to make sure everyone has a good understanding of the metrics before moving on to the interactive portion of the lab.
+
+**Preparation**
+
+* Read through the entire lab and use the sliders in the interactive activities.
+
+* Students will need access to <https://web.archive.org/web/20260101103806/http://research.google.com/bigpicture/attacking-discrimination-in-ml/>.  If working in groups, it is probably sufficient to have one computer per group.
+
+* Print copies of the [worksheet](loan-thresholds-worksheet.pdf) unless students 
+are going to access this online.
+
+* It may be useful to assign student roles: A driver to interact with the webiste,
+a recorder to take notes, a reporter to report back to the class, a facilitator 
+to keep the group on task, etc.
+If there are more roles than students in a group, some students can have multiple roles.
+
+
+# Guide for Instructors 
+
+## Lesson plan
+
+### Introduction (5 minutes)
+
+Have students brainstorm types of automated decisions that could be based on 
+assigning some sort of score to a person.  (Examples: 
+loans based on credit scores;
+car insurance rates based on driving score; 
+college admissions based on GPA or test scores, or some score that combines 
+these with other factors like extracurricular activities, community service, etc.;
+hiring based on some sort of score that combines education, experience, and other factors; sentencing based on a "likelihood of recidivism" score, etc.)
+
+Point out that none of these sorts of scores are perfect -- some wrong decisions 
+will be made.  Have students think about the types of wrong decisions that can be made (positive decision for someone who should not have been given a position decision,
+negative decision for someone who should not have been given a negative decision)
+and how various stakeholders are affected by the different types of errors.
+
+Depending on how comfortable you think students will be coming up with metrics for 
+fairness, either do the first portion of the activity as a class discussions or let students work in groups to come up with their own metrics. 
+
+### Worksheet ($\ge$ 25 minutes)
+
+At the point students should be ready to work through the worksheet.  It may be useful
+to interact with groups as they are going along to make sure they are on the 
+right track, are asking questions if they are confused, and are giving sufficiently 
+thoughtful answers.
+
+### Reflection 
+
+If you have time, reflection can be done as a class discussion having the reporters 
+from the groups share their groups' answers to some of the questions.
+If in-class time is short, some of the responses could be assigned as group homework.
+If you use a system like [Perusall](https://www.perusall.com/), you could have students post their answers to the questions and then have other students comment on them.
+
+### Additional resources
+
+In this simple situation, the results of score-based decision-making can be summarised 
+in a 2-by-2 table called a confusion matrix.  
+The [Wikipeidia article on confusion matrices](https://en.wikipedia.org/wiki/Confusion_matrix) includes a large number of different metrics that can be applied to evaluate the performance of these systems.  
+
+@Narayanan:2018 provides an overview of 21 different fairness definitions (and their "politics").  This is a video recording of a tutorial given at ACM FAT* in 2018.
+
+### References
+

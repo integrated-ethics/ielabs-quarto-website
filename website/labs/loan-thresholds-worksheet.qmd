@@ -1,0 +1,205 @@
+---
+title: Simulating Loan Thresholds
+author: Randall Pruim
+date: 2026-06-29
+---
+
+## A simplified situation
+
+Imagine a machine learning algorithm that takes information about loan
+applicants and assigns them a credit score from 0 to 100. The credit scores 
+are not perfect, however. Applicants with higher credit scores are more likely
+to repay their loan, but some people with lower credit scores will repay loans,
+and some with higher scores will not. 
+
+Your task is to devise a system that uses these credit scores to decide who gets
+a loan.
+
+:::{#exr-metrics}
+How will you measure how "good" your system is? What sorts of things could
+you measure/quantify as an indication of how well your system works? We'll call those things metrics. Come up with at least 3 metrics.
+:::
+
+<!-- maximize profit -->
+<!-- maximize correct decisions -->
+<!-- maximize % of loans repaid -->
+
+::: {#exr-compare-metrics}
+Which of your metrics do you like better? Why?
+:::
+
+---
+
+Now let's experiment a bit with some simulated data.
+Go to the "Attacking discrimination with smarter machine learning" page
+page at
+
+<center>
+<https://web.archive.org/web/20260101103806/http://research.google.com/bigpicture/attacking-discrimination-in-ml/>
+<br>
+</center>
+
+This website is based on issues raised in @Hardt:2016.
+
+## Loan Applicants: two scenarios
+
+:::{#exr-intro}
+Read the opening section of the web page to make sure you understand the two scenarios 
+presented and how they are represented graphically. 
+:::
+
+## Simulating Loan thresholds
+
+Now go to the section entitled "Simulating loan thresholds."
+The graphs and figures in this section provide metrics, and you can slide 
+the credit score threshold and see how these metrics change.
+<!-- <http://research.google.com/bigpicture/attacking-discrimination-in-ml/>. -->
+
+:::: {#exr-metrics-on-page}
+What metrics are included on this page?  How many of them are the same (or 
+equivalent to)[^equivalent-metrics] the ones you came up with?
+::::
+
+[^equivalent-metrics]: For our purposes, two metrics are equivalent if 
+they rank any two things the same -- that is, they always agree about which 
+option is the better one.
+
+::: {#exr-max-correct-decisions}
+What credit score threshold maximizes the number of correct decisions? Does
+that same threshold also minimize the number of incorrect decisions?
+:::
+
+::: {#exr-max-profit}
+What threshold maximizes profit? 
+
+Note: The app assumes a marginal gain of $300 for 
+each loan repaid and a loss of $700 for each loan default. 
+This is mentioned at the end of the section, but you can also figure it out from the 
+interactive graphic. How?
+:::
+
+::: {#exr-previous-two-the-same}
+Are your answers to @exr-max-correct-decisions and @exr-max-profit the same? Why or why not? 
+<!-- Use the language of “False Positive” and “False Negative”. -->
+:::
+
+::: {#exr-change-numbers}
+The app doesn't let you experiment with this, but suppose repaid loans had 
+a marginal benefit of \$400 and defaulted loans a marginal cost of only \$600.
+
+a. Would that lead a profit-maximizer to increase or decrease the threshold?
+Why?
+    
+b. How would the threshold change if you are maximizing correct decisions.
+:::
+
+## Different groups
+
+:::{.callout-warning}
+### **Don’t click the red buttons until directed.**
+
+Instead, just drag the threshold sliders.
+:::
+
+::: {#exr-compare-distributions}
+The text says: "In this case, the distributions of the two groups
+are slightly different, even though blue and orange people are equally likely to
+pay off a loan." 
+
+a. In what way are the distributions (of credit scores) different 
+for blue people and orange people?  (Remember your statistics? You 
+might think about things like center, spread, shape, etc. But remember
+that we are comparing distributions of *two* variables: credit score
+and whether or not they repay the loan. Furthermore, the dot plots 
+are stacking dots -- light above dark -- so be sure to interpret the shapes
+accordingly.)
+
+b. How might you improve the graphical display to make it easier to 
+see how the two groups differ?
+    
+c. Does the credit score do a better job for one group than for the other?
+What do you mean by better?
+:::
+
+::: {#exr-max-profit-each-group}
+Adjust the thresholds to maximize the profit that the bank gets for each
+group individually. 
+
+(a) What are the resulting thresholds for the two groups?
+(After discovering this by sliding the thresholds, you can check your 
+answer by clicking on the red “Max Profit” button.)
+(b) At those thresholds, which group is offered more loans? 
+(c) Of the loans that were offered, which group repays more of those loans? 
+(d) What is the resulting profit for the bank? 
+(e) Is that fair? (explain.) 
+:::
+
+::: {#exr-max-profit-same-threshold}
+Adjust the thresholds to maximize profit under the constraint that blue and
+orange must have the same threshold. (This is tricky in the UI; hint: it must be
+between the two thresholds you found in the previous exercise.) Answer the same
+five questions (a-e) as in the previous exercise. Then check your answer by
+clicking the "Group Unaware" button.
+:::
+
+::: {#exr-same-positive-rate-each-group}
+Starting at the "Group Unaware" thresholds, change the threshold on the
+orange group to increase its Positive Rate to match the Positive Rate of the
+blue group. 
+
+(a) What happens to the True Positive Rate? 
+(b) What happens to the bank’s profit? 
+(c) Is that good? Explain.
+:::
+
+::: {#exr-domographic-parity-equal-opportunity}
+Explore the "Demographic Parity" and "Equal Opportunity" objectives by
+clicking their buttons. The authors of the interactive visualization seem to
+have a favorite among these objectives. What reasons might someone have to agree
+or disagree with their assessment?
+:::
+
+## Thinking about your thinking
+
+There are a lot of value-laden words in the questions above: words like good,
+better, fair, etc. Compare two ways of awarding loans (from the ones above or
+from other ways you come up with), one of which you think is "better" than the
+other. This will be more interesting if you choose two that each of strong points
+rather than one that you think is great and one that you think is terrible -- make the
+decision difficult.
+
+::: {#exr-formulate-argument}
+What makes one better than the other? Imagine you had to defend the choice,
+what would be the main components of your argument?
+:::
+
+::: {#exr-general-principles}
+Are there general principles that would apply to other situations that have
+nothing to do with loans and credit scores?
+:::
+
+::: {#exr-simulation-wish-list}
+If you could wish for any feature(s) to be added to this simulation, what would it/they be?
+:::
+
+## The article
+
+This simple simulation is a by-product of a paper: @Hardt:2016.
+
+Here is the abstract:
+
+> We propose a criterion for discrimination against a **specified sensitive attribute** in
+supervised learning, where the goal is to predict **some target** based on **available features**. 
+Assuming data about the **predictor**, **target**, and 
+**membership in the protected group** are available, 
+we show how to optimally **adjust** any **learned predictor** so as to
+remove discrimination according to our definition. Our framework also improves
+incentives by shifting the cost of poor classification from disadvantaged groups to
+the decision maker, who can respond by improving the classification accuracy.
+We enourage readers to consult the more complete manuscript on the arXiv.
+
+::: {#exr-interpret-abstract}
+For each of the bolded words/phrases in the abstract, say what they correspond to in the simulation we 
+just looked at: (a) specified sensitive attribute; (b) some target; (c) available features; (d) 
+predictor; (e) membership in the protected group; (f) adjust (any) learned predictor.
+:::    
